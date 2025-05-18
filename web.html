@@ -1,0 +1,409 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title> 
+    <link rel="stylesheet" 
+          href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="web.css"> 
+    <link rel="stylesheet" href="res.css"> 
+</head> 
+  
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+      <nav class="navbar"> 
+        <div class="logo"> 
+            <h2 class="logo-heading">Portfolio Project</h2> 
+        </div> 
+        <div class="hamburger" id="hamburger"> 
+            <i class="fas fa-bars hamburger-icon"></i> 
+            <i class="fas fa-times cross-icon"></i> 
+        </div> 
+        <div class="menu"> 
+            <ul class="menu-list"> 
+                <li class="menu-list-items"> <a class="links" href="#home"> Home </a></li>
+                <li class="menu-list-items"> <a class="links" href="#portfolio"> Portfolio </a></li>
+                <li class="menu-list-items"> <a class="links" href="#about"> About </a></li>
+                <li class="menu-list-items"> <a class="links" href="#services"> Services </a></li>
+                <li class="menu-list-items"> <a class="links" href="#contact"> Contact </a></li>
+            </ul>               
+        </div>  
+    </nav>    
+    </header> 
+  
+    <!-- Main hero banner -->
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings"> 
+                <h3 class="greet-heading">Hello, We Are</h3> 
+                <h1 class="my-heading" style="color: black;"> Ayman, Ahmed, Rana, Aya</h1> 
+                <h3 class="sub-heading" style="color: black;">
+                    A Software Engineers and this is our Portfolio Project. 
+                </h3> 
+            </div> 
+            <div class="intro-buttons"> 
+                <button class="btn common-btn">Hire Us</button> 
+                <button class="btn ghost-btn">Get Resume</button>
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">Featured Portfolio</h1> 
+        </div> 
+        <div class="portfolio-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/web.jfif" 
+                                 alt="Web Design Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Web Design</h3> 
+                        <p class="small-para blue-text">Designing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/dev.jfif" 
+                                 alt="Web Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-40.jpg" alt="SEO Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">SEO</h3> 
+                        <p class="small-para blue-text">Optimization</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-46.jpg" 
+                                 alt="Content Writting Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Content Writing 
+                          </h3> 
+                        <p class="small-para blue-text">Writing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-54.jpg" 
+                                 alt="Wordpress Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              WordPress Dev 
+                          </h3> 
+                        <p class="small-para blue-text"> 
+                              Content Management System 
+                          </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-55.jpg" 
+                                 alt="Video Editing Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para blue-text">Editing</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+   <!-- Services Section -->
+   <section class="services" id="services"> 
+    <div class="services-heading"> 
+        <h1 class="my-heading text-center">Our Services</h1> 
+    </div> 
+    <div class="services-content"> 
+        <div class="my-row"> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-paint-brush"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text">Web Design</h3> 
+                    <p class="small-para"> 
+                      Web Design focuses on the visual aspects of a website, including layout,
+                       color scheme, typography, and graphics. It aims to create an appealing and user-friendly interface. 
+                       Web designers use tools like Adobe XD, Figma,
+                        and Sketch to design mockups and prototypes that guide the development process. 
+                    </p> 
+                    <p class="small-para"> 
+                      Web Design focuses on the visual aspects of a website, including layout,
+                      color scheme, typography, and graphics. It aims to create an appealing and user-friendly interface. 
+                      Web designers use tools like Adobe XD, Figma,
+                       and Sketch to design mockups and prototypes that guide the development process. 
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fa-solid fa-code"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Web Development 
+                      </h3> 
+                    <p class="small-para"> 
+                        Web development refers to the creating,  
+                          building, and maintaining 
+                        of websites. It includes aspects such as  
+                          web design, web publishing, 
+                        web programming, and database management.  
+                          It is the creation of an 
+                        application that works over the internet  
+                          i.e. websites. 
+                    </p> 
+                    <p class="small-para"> 
+                        Web development refers to the creating,  
+                          building, and maintaining 
+                        of websites. It includes aspects such as  
+                          web design, web publishing, 
+                        web programming, and database management.  
+                          It is the creation of an 
+                        application that works over the internet  
+                          i.e. websites. 
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-chart-line"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text">SEO</h3> 
+                    <p class="small-para"> 
+                      SEO stands for Search Engine Optimization, which enhances a website’s visibility in search engine results.
+                       It includes keyword research, on-page optimization, link building,
+                        and technical SEO. Effective SEO improves organic traffic and search rankings.
+                    </p> 
+                    <p class="small-para"> 
+                      SEO stands for Search Engine Optimization, which enhances a website’s visibility in search engine results.
+                      It includes keyword research, on-page optimization, link building,
+                       and technical SEO. Effective SEO improves organic traffic and search rankings.
+                    </p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="my-row"> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-quote-left"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Content Writting 
+                      </h3> 
+                    <p class="small-para"> 
+                      Content Writing involves creating engaging and valuable content for digital platforms like websites and blogs. 
+                      It includes blog posts, articles, and website copy.
+                       Content writers aim to attract and retain an audience while optimizing content for search engines.
+                    </p> 
+                    <p class="small-para"> 
+                      Content Writing involves creating engaging and valuable content for digital platforms like websites and blogs. 
+                      It includes blog posts, articles, and website copy.
+                       Content writers aim to attract and retain an audience while optimizing content for search engines.
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fab fa-wordpress-simple"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          WordPress Dev 
+                      </h3> 
+                    <p class="small-para"> 
+                      WordPress Development focuses on building and customizing websites using the WordPress platform,
+                       which is a popular content management system (CMS). This involves creating themes, plugins,
+                        and custom functionality to meet specific needs. WordPress developers use 
+                        to develop and manage websites that can range from simple blogs to complex e-commerce sites.
+                    </p> 
+                    <p class="small-para"> 
+                      WordPress Development focuses on building and customizing websites using the WordPress platform. 
+                      This involves creating themes, plugins, and custom functionalities using PHP, HTML, CSS,
+                       and JavaScript to meet specific website needs.
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-video"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Video Editing 
+                      </h3> 
+                    <p class="small-para"> 
+                      Video Editing involves manipulating and rearranging video footage to create a new work. 
+                      This includes trimming segments, re-sequencing clips, and adding transitions and effects.
+                       Editors use software like Adobe Premiere Pro and Final Cut Pro to produce polished final products.
+                    </p> 
+                    <p class="small-para"> 
+                      Video Editing involves manipulating and rearranging video footage to create a new work. 
+                      This includes trimming segments, re-sequencing clips, and adding transitions and effects.
+                       Editors use software like Adobe Premiere Pro and Final Cut Pro to produce polished final products.
+                    </p> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="about-text">
+        <h1 class="my-heading">About Us</h1>
+        <p class="lead-para">
+            Welcome to our digital services hub, where creativity meets functionality. 
+            We are a team of passionate professionals dedicated to providing top-notch solutions to help you succeed online.
+            Our diverse skill set ensures that we can handle any challenge you throw our way. 
+            Here’s a little bit about what we do:
+        </p>
+        <p class="lead-para">
+            <strong>Web Design</strong>: Our designing team creates visually stunning and user-friendly websites that captivate your audience and leave a lasting impression. 
+        
+        </p>
+        <p class="lead-para">
+            <strong>Web Development</strong>: Our development team brings your designs to life with clean, efficient, and scalable code. 
+            
+        </p>
+        <p class="lead-para">
+            <strong>SEO</strong>: Optimization is key to getting your website noticed. 
+
+        </p>
+        <p class="lead-para">
+            <strong>Content Writing</strong>: Our writing team crafts compelling and engaging content that speaks to your audience. 
+           
+        </p>
+        <p class="lead-para">
+            <strong>WordPress Development</strong>: As experts in WordPress, we provide comprehensive Content Management System solutions. 
+            
+        </p>
+        <p class="lead-para">
+            <strong>Video Editing</strong>: Our video editing team transforms raw footage into professional-grade videos. 
+           
+        </p>
+        <p>
+            At our core, we are driven by a passion for excellence and a commitment to our clients. 
+            We work closely with you to understand your needs and deliver results that exceed your expectations. 
+            Let's create something amazing together!
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="./Images/team2.jpg" alt="About Image">
+    </div>
+</section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Us</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                  <input class="form-controls" type="text" placeholder="Your Name" required> 
+                  <input class="form-controls" type="email" placeholder="Your Email" required> 
+                  <input class="form-controls" type="tel" placeholder="Your Phone" required> 
+                  <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea> 
+                  <input class="form-btn btn common-btn" type="submit" value="Send Message"> 
+              </form>
+              
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">Our Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAILS</h5> 
+                    <p class="contact-text">OurTeam@gmail.com</p>
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONES</h5> 
+                    <p class="contact-text">+20 11 1087 1987</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">FAX</h5> 
+                    <p class="contact-text">+20 10 6038 2877</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">Shebin ElKom, MNU</p> 
+                    <p>Faculty of CS</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+     <!-- Footer section -->
+     <footer class="footer"> 
+      <div class="footer-content text-center"> 
+          <h4> 
+              Copyright ©️ 2024 All rights reserved | 
+              This portfolio website is created  
+              by our team. 
+          </h4> 
+          <div class="social-links"> 
+              <div class="footer-menu"> 
+                  <ul class="footer-menu-list"> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.facebook.com/profile.php?id=100053330989548&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-facebook-f"></i> 
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://github.com/ahmed-khalid2004" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i>
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.instagram.com/ahmed_khalid57?utm_source=qr&igsh=aWVkZzB2cmNuamps" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-instagram"></i> 
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.linkedin.com/in/ahmed-khalid-5b6349259" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </li> 
+                  </ul> 
+              </div> 
+          </div> 
+      </div> 
+  </footer>
+  
+  
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity= "sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+      </script> 
+    <script src="web.js"></script> 
+</body> 
+  
+</html>

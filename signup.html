@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<form name="signupform" onsubmit="return registerUser()">
+    <label for="newName">Name:</label>
+    <input type="text" name="newName" id="newName"> <br><br>
+    
+    <label for="newEmail">Email:</label>
+    <input type="email" name="newEmail" id="newEmail" placeholder="example@example.com"> <br><br>
+    
+    <label for="newPhone">Phone Number:</label>
+    <input type="text" name="newPhone" id="newPhone" placeholder="Enter your phone number"> <br><br>
+    
+    <label for="newFaculty">Faculty:</label>
+    <select name="newFaculty" id="newFaculty">
+        <option value="Computer Science">Computer Science</option>
+        <option value="engineering">Engineering</option>
+        <option value="AI">AI</option>
+        <option value="business">Business</option>
+        <option value="science">Science</option>
+        <option value="arts">Arts</option>
+        <option value="Other">Other</option>
+    </select> <br><br>
+    
+    <label for="newPass">Password:</label>
+    <input type="password" name="newPass" id="newPass"> <br><br>
+    
+    <input type="submit" value="Create User">
+</form>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

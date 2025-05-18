@@ -1,0 +1,113 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .logo-heading {
+        font-size: 1.5rem;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5cf7c6;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+    .menu-list {
+        flex-direction: column;
+    }
+    .menu-list-items {
+        margin: 0;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: inline;
+    }
+    .hamburger-icon.active {
+        display: none;
+    }
+    .cross-icon.active {
+        display: inline;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero .intro {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .about .about-text,
+    .about .about-image {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .about .about-image img {
+        width: 80%;
+        height: auto;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 0 1rem;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services .my-row {
+        flex-direction: column;
+    }
+    .services .my-col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact {
+        padding: 0 1rem;
+        background-size: cover;
+        height: auto;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-form-container,
+    .contact-details {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .contact-form .form-btn {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-menu {
+        padding: 0;
+    }
+    .footer-list-items {
+        margin: 0 5px;
+    }
+}
