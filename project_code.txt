@@ -1,0 +1,1928 @@
+﻿===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\login.html =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+<form name="myform" onsubmit="return test()">
+    <label for="ffn">Name:</label>
+    <input type="text" name="fn" id="ffn"> <br><br>
+    
+    <label for="pss">Password:</label>
+    <input type="password" name="ps" id="pss"> <br><br>
+    
+    <a href="signup.html" class="signup-link">I don't have an account</a> <br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<script src="signin.js"></script>
+
+</body>
+</html>
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\portfolio.css =====
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;
+} 
+  
+/* Header Navbar Styles */
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C); 
+    background-color: transparent; 
+} 
+.navbar ul li{
+    list-style-type:none;
+    display: inline-block; 
+    margin: 0.8rem 1.5rem;
+}
+.navbar ul li a{
+    color:rgb(0, 13, 255);
+    text-transform: capitalize;
+    transition: 0.4s;
+}  
+.navbar ul li a:hover{
+    color:rgb(4, 255, 96);
+}
+.logo { 
+    padding: 0 5rem; 
+} 
+  
+.logo .logo-heading { 
+    color: #fff; 
+} 
+  
+.menu { 
+    padding: 0 5rem; 
+} 
+  
+.hamburger { 
+    display: none; 
+    color: #fff; 
+    font-size: 25px; 
+} 
+  
+.cross-icon { 
+    display: none; 
+} 
+  
+.menu .menu-list { 
+    display: flex; 
+    list-style: none; 
+} 
+  
+.menu-list .menu-list-items { 
+    padding: 0.5rem 1rem; 
+} 
+  
+ .menu-list .menu-list-items { 
+     padding: 0.5rem 0.3rem; 
+ } 
+  
+/* Main Hero Section Styles */
+.hero { 
+    background-color: #f7f7f7;
+    background-image: url('./Images/royalty_green.png');
+    background-repeat: no-repeat; 
+    background-size: 135% 100%; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: start; 
+    margin: 4.8rem 0; 
+} 
+  
+.hero .intro { 
+    text-align: center; 
+    margin: 0 5rem; 
+} 
+  
+.hero .intro-buttons { 
+    margin: 2rem 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+} 
+  
+/* About section styles */
+.about { 
+    display: flex; 
+    align-items: center; 
+    background-image: linear-gradient(45deg, #363D73, #2794B3); 
+    justify-content: space-between; 
+    width: 100%; 
+} 
+  
+.about .about-text { 
+    width: 450px; 
+    color: #fff; 
+    padding: 5rem 1rem 5rem 5rem; 
+} 
+  
+.about .about-image img { 
+    height: 400px; 
+    width: 450px; 
+    padding: 5rem 5rem 5rem 1rem; 
+} 
+  
+/* Portfolio section styles */
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+  
+.port-card { 
+    padding: 0 !important; 
+    background: none !important; 
+    border: 2px solid #000; 
+} 
+  
+.port-card .image { 
+    width: 100%; 
+} 
+  
+.port-card .image img { 
+    height: 200px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+}
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\portfolio.html =====
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Icons/xbox_logo_icon_169692.ico">
+    <link rel="stylesheet" href="portfolio.css"> 
+    <link rel="stylesheet" href="res.css"> 
+</head> 
+
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+        <nav class="navbar"> 
+             <div class="logo"> 
+                <h2 class="logo-heading">Portfolio Project</h2> 
+            </div> 
+            <div class="hamburger" id="hamburger"> 
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+            <div class="menu"> 
+                <ul class="menu-list"> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#home"> 
+                              Home 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#portfolio"> 
+                              Portfolio 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#about"> 
+                              About 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#services"> 
+                              Services 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#contact"> 
+                              Contact us 
+                          </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </nav> 
+    </header> 
+  
+    <!-- Main hero banner -->
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings"> 
+                <h3 class="greet-heading">Hello, We are</h3> 
+                <h1 class="my-heading">Rana, Aya, Ayman, Ahmed</h1> 
+                <h4 class="sub-heading"> 
+                    A Software Engineers. 
+                </h4> 
+            </div> 
+            <div class="intro-buttons"> 
+                <button class="btn common-btn">Hire Me</button> 
+                <button class="btn ghost-btn">Get Resume</button> 
+            </div> 
+           </div> 
+           <div class="image"> 
+            <img src="./Images/website.png" 
+               alt="background"> 
+      </div> 
+    </section> 
+  
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">Featured Portfolio</h1> 
+        </div> 
+        <div class="portfolio-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/web.jfif" 
+                                 alt="Web Design Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Web Design</h3> 
+                        <p class="small-para blue-text">Designing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/dev.jfif" 
+                                 alt="Web Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/web-banner.png" alt="SEO Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">SEO</h3> 
+                        <p class="small-para blue-text">Optimization</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/bg.jfif" 
+                                 alt="Content Writting Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Content Writing 
+                          </h3> 
+                        <p class="small-para blue-text">Writing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/com_green.jpg" 
+                                 alt="Wordpress Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              WordPress Dev 
+                          </h3> 
+                        <p class="small-para blue-text"> 
+                              Content Management System 
+                          </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/team.png" 
+                                 alt="Video Editing Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para blue-text">Editing</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- About Section -->
+    <section id="about" class="about"> 
+        <div class="about-text"> 
+            <h1 class="my-heading">About Me</h1> 
+            <p class="lead-para"> 
+                GeeksforGeeks is a leading platform  
+                  that provides computer science 
+                resources and coding challenges for  
+                  programmers and technology 
+                enthusiasts, along with interview  
+                  and exam preparations for upcoming 
+                aspirants. With a strong emphasis on  
+                  enhancing coding skills and knowledge, 
+                it has become a trusted destination  
+                  for over 12 million plus registered 
+                users worldwide. The platform offers  
+                  a vast collection of tutorials, practice 
+                problems, interview tutorials, articles,  
+                  and courses, covering various domains 
+                of computer science. 
+            </p> 
+            <p> 
+                Our exceptional mentors hailing from top  
+                  colleges & organizations have the 
+                ability to guide you on a journey from  
+                  the humble beginnings of coding to 
+                the pinnacle of expertise. Under their  
+                  guidance watch your skills flourish 
+                as we lay the foundation and help you  
+                  conquer the world of coding. 
+            </p> 
+        </div> 
+        <div class="about-image"> 
+            <img src="./Images/heroImg2.avif" alt="About Image"> 
+        </div> 
+    </section> 
+  
+    <!-- Services Section -->
+    <section class="services" id="services"> 
+        <div class="services-heading"> 
+            <h1 class="my-heading text-center">My Services</h1> 
+        </div> 
+        <div class="services-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-paint-brush"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Web Design</h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-code"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-chart-line"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">SEO</h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-quote-left"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Content Writting 
+                          </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining of websites.  
+                              It includes aspects such as web design,  
+                              web publishing, web programming, and  
+                              database management. It is the creation  
+                              of an application that works over the  
+                              internet i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining of websites.  
+                              It includes aspects such as web design,  
+                              web publishing, web programming, and  
+                              database management. It is the creation of an 
+                            application that works over the internet i.e.  
+                              websites. 
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fab fa-wordpress-simple"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              WordPress Dev 
+                          </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining of websites.  
+                              It includes aspects such as web design,  
+                              web publishing, web programming, and  
+                              database management. It is the creation  
+                              of an application that works over the  
+                              internet i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-video"></i> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- Contact me section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Me</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Name"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Email"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Phone"> 
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10"> 
+                      </textarea> 
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message"> 
+                </form> 
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">example@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+91 0123456789</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">FAX</h5> 
+                    <p class="contact-text">+91 0123456789</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">San Francisco, CA</p> 
+                    <p>4th Floor8 Lower</p> 
+                    <p>San Francisco street, M1 50F</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- Footer section -->
+    <footer class="footer"> 
+        <div class="footer-content text-center"> 
+            <h4> 
+                Copyright Â© 2023 All rights reserved | 
+                This portfolio website template is created  
+                  by GeeksforGeeks. 
+            </h4> 
+            <div class="social-links"> 
+                <div class="footer-menu"> 
+                    <ul class="footer-menu-list"> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-facebook-f"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-twitter"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-instagram"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-linkedin-in"></i> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+  
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+      </script> 
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\portfolio.js =====
+const hamburger = document.getElementById('hamburger'); 
+const menu = document.querySelector('.menu'); 
+
+hamburger.addEventListener('click', function () { 
+	const hamIcon = this.querySelector('.hamburger-icon'); 
+	const crossIcon = this.querySelector('.cross-icon'); 
+	if (hamIcon.style.display === "none") { 
+		hamIcon.style.display = "inline-block"
+		menu.style.display = "none"
+		crossIcon.style.display = "none"
+	} 
+	else { 
+		crossIcon.style.display = "inline-block"
+		hamIcon.style.display = "none"
+		menu.style.display = "block"
+	} 
+});
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\res.css =====
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .logo-heading {
+        font-size: 1.5rem;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5cf7c6;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+    .menu-list {
+        flex-direction: column;
+    }
+    .menu-list-items {
+        margin: 0;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: inline;
+    }
+    .hamburger-icon.active {
+        display: none;
+    }
+    .cross-icon.active {
+        display: inline;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero .intro {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .about .about-text,
+    .about .about-image {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .about .about-image img {
+        width: 80%;
+        height: auto;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 0 1rem;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services .my-row {
+        flex-direction: column;
+    }
+    .services .my-col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact {
+        padding: 0 1rem;
+        background-size: cover;
+        height: auto;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-form-container,
+    .contact-details {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .contact-form .form-btn {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-menu {
+        padding: 0;
+    }
+    .footer-list-items {
+        margin: 0 5px;
+    }
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\signin.css =====
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+.signup-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.signup-link:hover {
+    text-decoration: underline;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00b31b;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #05fa63;
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\signin.js =====
+function test() {
+    var name = document.forms["myform"]["fn"].value;
+    var pas = document.forms["myform"]["ps"].value;
+
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    
+    for (var i = 0; i < users.length; i++) {
+        if (name == users[i].name && pas == users[i].password) {
+            alert("Sign in successful");
+            window.location.href = "web.html";
+            return false;
+        }
+    }
+    
+    if (name === "" || pas === "") {
+        alert("Name or password is empty");
+    } else {
+        alert("Data not valid");
+    }
+    
+    return false;
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\signup.css =====
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00b31b;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #05fa63;
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\signup.html =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<form name="signupform" onsubmit="return registerUser()">
+    <label for="newName">Name:</label>
+    <input type="text" name="newName" id="newName"> <br><br>
+    
+    <label for="newEmail">Email:</label>
+    <input type="email" name="newEmail" id="newEmail" placeholder="example@example.com"> <br><br>
+    
+    <label for="newPhone">Phone Number:</label>
+    <input type="text" name="newPhone" id="newPhone" placeholder="Enter your phone number"> <br><br>
+    
+    <label for="newFaculty">Faculty:</label>
+    <select name="newFaculty" id="newFaculty">
+        <option value="Computer Science">Computer Science</option>
+        <option value="engineering">Engineering</option>
+        <option value="AI">AI</option>
+        <option value="business">Business</option>
+        <option value="science">Science</option>
+        <option value="arts">Arts</option>
+        <option value="Other">Other</option>
+    </select> <br><br>
+    
+    <label for="newPass">Password:</label>
+    <input type="password" name="newPass" id="newPass"> <br><br>
+    
+    <input type="submit" value="Create User">
+</form>
+
+<script src="signup.js"></script>
+
+</body>
+</html>
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\signup.js =====
+function registerUser() {
+    var newName = document.forms["signupform"]["newName"].value;
+    var newEmail = document.forms["signupform"]["newEmail"].value;
+    var newPhone = document.forms["signupform"]["newPhone"].value;
+    var newFaculty = document.forms["signupform"]["newFaculty"].value;
+    var newPass = document.forms["signupform"]["newPass"].value;
+
+    if (newName === "" || newEmail === "" || newPhone === "" || newFaculty === "" || newPass === "") {
+        alert("Please fill in all fields");
+        return false;
+    }
+
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    users.push({ 
+        name: newName, 
+        email: newEmail,
+        phone: newPhone,
+        faculty: newFaculty,
+        password: newPass 
+    });
+    localStorage.setItem('users', JSON.stringify(users));
+
+    alert("User created successfully!");
+    window.location.href = "login.html"; // Redirect to the signup page
+
+    return false; // Prevent form submission
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\web.css =====
+/*css*/
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+  
+/* Header Navbar Styles (first page-Header)*/
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5cf7c6;
+    color: #ffffff;
+}
+
+.logo-heading {
+    margin: 0;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icon, .cross-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: none;
+}
+
+.hamburger-icon {
+    display: inline;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list-items {
+    margin: 0 1rem;
+}
+
+.links {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links:hover {
+    color: #028900;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1aea8c;
+    }
+    .menu-list {
+        flex-direction: column;
+    }
+    .menu-list-items {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .hamburger-icon.active {
+        display: none;
+    }
+    .cross-icon.active {
+        display: inline;
+    }
+}
+
+    /* Main Hero Section Styles (first page-Home)*/
+.hero { 
+    background-image: url('./Images/website.png');
+    background-repeat: no-repeat; 
+    background-size: 112% 103%; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: start; 
+} 
+  
+.hero .intro { 
+    text-align: center;
+    color: #14e567;
+    width: 600px;
+    height: 290px; 
+    margin: 0 5rem; 
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    flex-direction: column;
+} 
+  
+.hero .intro-buttons { 
+    margin: 2rem 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    flex-direction: row;
+} 
+.hero .intro-buttons .btn{
+    font-size: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    letter-spacing: 1px; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    letter-spacing: 1px; 
+    border: none;
+} 
+.hero .intro-buttons .btn:hover{ 
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px solid #18e42c;
+    transition: 0.25s;
+    background: #14e567;
+    outline: none;
+    cursor: pointer;
+} 
+/* About section styles (third page-About)*/
+.about { 
+    display: flex; 
+    align-items: center;
+    background-image: linear-gradient(45deg, #363D73, #2794B3);
+    justify-content: space-between; 
+    width: 100%;
+    height: 100vh;
+} 
+.about .about-text { 
+    width: 450px;
+    color: #fff; 
+    padding: 5rem 1rem 5rem 5rem; 
+} 
+  
+.about .about-image img { 
+    height: 600px; 
+    width: 700px; 
+    padding: 5rem 5rem 5rem 1rem;
+} 
+/* Portfolio section styles (second page-Portfolio)*/
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+  
+.port-card { 
+    padding: 0 !important; 
+    background: none !important; 
+    border: 2px solid #000; 
+} 
+  
+.port-card .image { 
+    width: 100%; 
+} 
+  
+.port-card .image img { 
+    height: 200px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px;
+}
+/* Services section styles (fourth page-Services)*/
+.services { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin: 4.5rem 0; 
+    padding: 0 5rem; 
+} 
+
+.services .services-content .my-card:hover {
+    cursor: pointer; 
+    display: inline-flex;
+    background: rgba(89, 228, 117, 0.7);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    transition: 0.5s;
+} 
+
+.my-card:hover h3{
+    transform: translateY(-50%);
+    flex-direction: column;
+    bottom: 49%;
+    opacity: 1;
+    width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transition: 0.5s;
+} 
+.my-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 2rem 0; 
+} 
+  
+.my-row .my-col { 
+    text-align: center; 
+    width: 30%; 
+} 
+  
+.my-card { 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+    padding: 1rem; 
+} 
+  
+.icon { 
+    display: flex;
+    height: 100px; 
+    width: 100px; 
+    border-radius: 50%; 
+    background-color: #363D73; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+/* Contact section styles (fifth page-Contact)*/
+.contact { 
+    padding: 0 4rem; 
+    background-image: url('./Images/web.png');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    width: 89%; 
+    color: #000000;
+    height: 95vh;
+} 
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+} 
+.contact-form-container { 
+    width: 50%; 
+} 
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+} 
+.contact-form .form-controls { 
+    width: 80%;
+    padding: 5px 0; 
+    margin: 1.67rem 0; 
+} 
+.contact-form .form-btn { 
+    padding: 6px;
+    margin: 0 6rem;
+    width: 45%;
+    font-size: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}  
+.contact-form .form-btn:hover{ 
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    font-size: 19px;
+    display: inline-block;
+    transition: 0.5s;
+    background: #01ac48;
+    letter-spacing: 1px; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none;
+}  
+.contact-details {
+    width: 40%; 
+    height: 400px;
+    margin: 10px 0 0 30px ; 
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    box-sizing: content-box;
+    padding: 1rem 4rem 4rem 4rem ;
+    text-align: center;
+    font-size: 16px;
+
+}
+.contact .contact-details:hover {
+    cursor: pointer; 
+    display: inline-block;
+    background: #00ddff;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    transition: 0.5s;
+} 
+.contact-details:hover h1{
+    background-color: #00fff7;
+    transform: translateY(-50%);
+    flex-direction: column;
+    bottom: 49%;
+    opacity: 1;
+    width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    bottom: 0;
+    transition: 0.5s;
+} 
+/* Footer Styles (fifth page-Footer)*/
+.footer { 
+    background-color: #000; 
+    background-size: 100% 100%;
+    color: #fff; 
+    padding: 2rem; 
+} 
+  
+.footer-list-items { 
+    display: flex;
+    padding: 3px; 
+    align-items: center; 
+    justify-content: center; 
+    height: 50px; 
+    width: 50px; 
+    margin: 0 10px; 
+    border-radius: 50%; 
+    background-color: #53C8B6; 
+    cursor: pointer; 
+    display: inline-flex;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+} 
+.footer-menu .footer-list-items:hover{
+    transform:scale(1.3);
+    flex-direction: row;
+    transition: 0.5s;
+    background: rgba(0, 179, 255, 0.7);
+} 
+  
+.footer-links { 
+    font-size: 24px; 
+    color: #ffffff; 
+    text-decoration: none; 
+} 
+  
+.social-links { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+.footer-menu { 
+    display: inline-flex;
+    padding: 0 5rem; 
+} 
+
+/* utility classes */ 
+.my-heading { 
+    font-size: 2.5rem; 
+}  
+.heading-span{
+    font-weight: bolder;
+}
+.text-center{
+    text-align: center;
+}
+.links:hover { 
+    border-bottom: 2px solid #fff;
+} 
+  
+.links { 
+    border-bottom: 2px solid transparent; 
+    transition: 0.25s; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: #fff; 
+}  
+.heading-span { 
+    font-weight: bolder; 
+}  
+.white-text { 
+    color: #fff; 
+} 
+  
+.blue-text { 
+    color:#363D73;
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\web.html =====
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title> 
+    <link rel="stylesheet" 
+          href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="web.css"> 
+    <link rel="stylesheet" href="res.css"> 
+</head> 
+  
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+      <nav class="navbar"> 
+        <div class="logo"> 
+            <h2 class="logo-heading">Portfolio Project</h2> 
+        </div> 
+        <div class="hamburger" id="hamburger"> 
+            <i class="fas fa-bars hamburger-icon"></i> 
+            <i class="fas fa-times cross-icon"></i> 
+        </div> 
+        <div class="menu"> 
+            <ul class="menu-list"> 
+                <li class="menu-list-items"> <a class="links" href="#home"> Home </a></li>
+                <li class="menu-list-items"> <a class="links" href="#portfolio"> Portfolio </a></li>
+                <li class="menu-list-items"> <a class="links" href="#about"> About </a></li>
+                <li class="menu-list-items"> <a class="links" href="#services"> Services </a></li>
+                <li class="menu-list-items"> <a class="links" href="#contact"> Contact </a></li>
+            </ul>               
+        </div>  
+    </nav>    
+    </header> 
+  
+    <!-- Main hero banner -->
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings"> 
+                <h3 class="greet-heading">Hello, We Are</h3> 
+                <h1 class="my-heading" style="color: black;"> Ayman, Ahmed, Rana, Aya</h1> 
+                <h3 class="sub-heading" style="color: black;">
+                    A Software Engineers and this is our Portfolio Project. 
+                </h3> 
+            </div> 
+            <div class="intro-buttons"> 
+                <button class="btn common-btn">Hire Us</button> 
+                <button class="btn ghost-btn">Get Resume</button>
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">Featured Portfolio</h1> 
+        </div> 
+        <div class="portfolio-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/web.jfif" 
+                                 alt="Web Design Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Web Design</h3> 
+                        <p class="small-para blue-text">Designing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/dev.jfif" 
+                                 alt="Web Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-40.jpg" alt="SEO Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">SEO</h3> 
+                        <p class="small-para blue-text">Optimization</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-46.jpg" 
+                                 alt="Content Writting Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Content Writing 
+                          </h3> 
+                        <p class="small-para blue-text">Writing</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-54.jpg" 
+                                 alt="Wordpress Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              WordPress Dev 
+                          </h3> 
+                        <p class="small-para blue-text"> 
+                              Content Management System 
+                          </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/photo_2024-05-18_11-21-55.jpg" 
+                                 alt="Video Editing Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para blue-text">Editing</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+   <!-- Services Section -->
+   <section class="services" id="services"> 
+    <div class="services-heading"> 
+        <h1 class="my-heading text-center">Our Services</h1> 
+    </div> 
+    <div class="services-content"> 
+        <div class="my-row"> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-paint-brush"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text">Web Design</h3> 
+                    <p class="small-para"> 
+                      Web Design focuses on the visual aspects of a website, including layout,
+                       color scheme, typography, and graphics. It aims to create an appealing and user-friendly interface. 
+                       Web designers use tools like Adobe XD, Figma,
+                        and Sketch to design mockups and prototypes that guide the development process. 
+                    </p> 
+                    <p class="small-para"> 
+                      Web Design focuses on the visual aspects of a website, including layout,
+                      color scheme, typography, and graphics. It aims to create an appealing and user-friendly interface. 
+                      Web designers use tools like Adobe XD, Figma,
+                       and Sketch to design mockups and prototypes that guide the development process. 
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fa-solid fa-code"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Web Development 
+                      </h3> 
+                    <p class="small-para"> 
+                        Web development refers to the creating,  
+                          building, and maintaining 
+                        of websites. It includes aspects such as  
+                          web design, web publishing, 
+                        web programming, and database management.  
+                          It is the creation of an 
+                        application that works over the internet  
+                          i.e. websites. 
+                    </p> 
+                    <p class="small-para"> 
+                        Web development refers to the creating,  
+                          building, and maintaining 
+                        of websites. It includes aspects such as  
+                          web design, web publishing, 
+                        web programming, and database management.  
+                          It is the creation of an 
+                        application that works over the internet  
+                          i.e. websites. 
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-chart-line"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text">SEO</h3> 
+                    <p class="small-para"> 
+                      SEO stands for Search Engine Optimization, which enhances a websiteâ€™s visibility in search engine results.
+                       It includes keyword research, on-page optimization, link building,
+                        and technical SEO. Effective SEO improves organic traffic and search rankings.
+                    </p> 
+                    <p class="small-para"> 
+                      SEO stands for Search Engine Optimization, which enhances a websiteâ€™s visibility in search engine results.
+                      It includes keyword research, on-page optimization, link building,
+                       and technical SEO. Effective SEO improves organic traffic and search rankings.
+                    </p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="my-row"> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-quote-left"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Content Writting 
+                      </h3> 
+                    <p class="small-para"> 
+                      Content Writing involves creating engaging and valuable content for digital platforms like websites and blogs. 
+                      It includes blog posts, articles, and website copy.
+                       Content writers aim to attract and retain an audience while optimizing content for search engines.
+                    </p> 
+                    <p class="small-para"> 
+                      Content Writing involves creating engaging and valuable content for digital platforms like websites and blogs. 
+                      It includes blog posts, articles, and website copy.
+                       Content writers aim to attract and retain an audience while optimizing content for search engines.
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fab fa-wordpress-simple"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          WordPress Dev 
+                      </h3> 
+                    <p class="small-para"> 
+                      WordPress Development focuses on building and customizing websites using the WordPress platform,
+                       which is a popular content management system (CMS). This involves creating themes, plugins,
+                        and custom functionality to meet specific needs. WordPress developers use 
+                        to develop and manage websites that can range from simple blogs to complex e-commerce sites.
+                    </p> 
+                    <p class="small-para"> 
+                      WordPress Development focuses on building and customizing websites using the WordPress platform. 
+                      This involves creating themes, plugins, and custom functionalities using PHP, HTML, CSS,
+                       and JavaScript to meet specific website needs.
+                    </p> 
+                </div> 
+            </div> 
+            <div class="my-col"> 
+                <div class="my-card"> 
+                    <div class="icon"> 
+                        <i class="fas fa-video"></i> 
+                    </div> 
+                    <h3 class="greet-heading blue-text"> 
+                          Video Editing 
+                      </h3> 
+                    <p class="small-para"> 
+                      Video Editing involves manipulating and rearranging video footage to create a new work. 
+                      This includes trimming segments, re-sequencing clips, and adding transitions and effects.
+                       Editors use software like Adobe Premiere Pro and Final Cut Pro to produce polished final products.
+                    </p> 
+                    <p class="small-para"> 
+                      Video Editing involves manipulating and rearranging video footage to create a new work. 
+                      This includes trimming segments, re-sequencing clips, and adding transitions and effects.
+                       Editors use software like Adobe Premiere Pro and Final Cut Pro to produce polished final products.
+                    </p> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="about-text">
+        <h1 class="my-heading">About Us</h1>
+        <p class="lead-para">
+            Welcome to our digital services hub, where creativity meets functionality. 
+            We are a team of passionate professionals dedicated to providing top-notch solutions to help you succeed online.
+            Our diverse skill set ensures that we can handle any challenge you throw our way. 
+            Hereâ€™s a little bit about what we do:
+        </p>
+        <p class="lead-para">
+            <strong>Web Design</strong>: Our designing team creates visually stunning and user-friendly websites that captivate your audience and leave a lasting impression. 
+        
+        </p>
+        <p class="lead-para">
+            <strong>Web Development</strong>: Our development team brings your designs to life with clean, efficient, and scalable code. 
+            
+        </p>
+        <p class="lead-para">
+            <strong>SEO</strong>: Optimization is key to getting your website noticed. 
+
+        </p>
+        <p class="lead-para">
+            <strong>Content Writing</strong>: Our writing team crafts compelling and engaging content that speaks to your audience. 
+           
+        </p>
+        <p class="lead-para">
+            <strong>WordPress Development</strong>: As experts in WordPress, we provide comprehensive Content Management System solutions. 
+            
+        </p>
+        <p class="lead-para">
+            <strong>Video Editing</strong>: Our video editing team transforms raw footage into professional-grade videos. 
+           
+        </p>
+        <p>
+            At our core, we are driven by a passion for excellence and a commitment to our clients. 
+            We work closely with you to understand your needs and deliver results that exceed your expectations. 
+            Let's create something amazing together!
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="./Images/team2.jpg" alt="About Image">
+    </div>
+</section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Us</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                  <input class="form-controls" type="text" placeholder="Your Name" required> 
+                  <input class="form-controls" type="email" placeholder="Your Email" required> 
+                  <input class="form-controls" type="tel" placeholder="Your Phone" required> 
+                  <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea> 
+                  <input class="form-btn btn common-btn" type="submit" value="Send Message"> 
+              </form>
+              
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">Our Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAILS</h5> 
+                    <p class="contact-text">OurTeam@gmail.com</p>
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONES</h5> 
+                    <p class="contact-text">+20 11 1087 1987</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">FAX</h5> 
+                    <p class="contact-text">+20 10 6038 2877</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">Shebin ElKom, MNU</p> 
+                    <p>Faculty of CS</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+     <!-- Footer section -->
+     <footer class="footer"> 
+      <div class="footer-content text-center"> 
+          <h4> 
+              Copyright Â©ï¸ 2024 All rights reserved | 
+              This portfolio website is created  
+              by our team. 
+          </h4> 
+          <div class="social-links"> 
+              <div class="footer-menu"> 
+                  <ul class="footer-menu-list"> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.facebook.com/profile.php?id=100053330989548&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-facebook-f"></i> 
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://github.com/ahmed-khalid2004" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i>
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.instagram.com/ahmed_khalid57?utm_source=qr&igsh=aWVkZzB2cmNuamps" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-instagram"></i> 
+                          </a>
+                      </li> 
+                      <li class="footer-list-items"> 
+                          <a class="footer-links" href="https://www.linkedin.com/in/ahmed-khalid-5b6349259" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </li> 
+                  </ul> 
+              </div> 
+          </div> 
+      </div> 
+  </footer>
+  
+  
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity= "sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+      </script> 
+    <script src="web.js"></script> 
+</body> 
+  
+</html>
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\web.js =====
+const hamburger = document.getElementById('hamburger'); 
+const menu = document.querySelector('.menu'); 
+
+hamburger.addEventListener('click', function () { 
+	const hamIcon = this.querySelector('.hamburger-icon'); 
+	const crossIcon = this.querySelector('.cross-icon'); 
+	if (hamIcon.style.display === "none") { 
+		hamIcon.style.display = "inline-block"
+		menu.style.display = "none"
+		crossIcon.style.display = "none"
+	} 
+	else { 
+		crossIcon.style.display = "inline-block"
+		hamIcon.style.display = "none"
+		menu.style.display = "block"
+	} 
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    const crossIcon = document.querySelector('.cross-icon');
+    const links = document.querySelectorAll('.links');
+
+    // Toggle the menu
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        hamburgerIcon.classList.toggle('active');
+        crossIcon.classList.toggle('active');
+    });
+
+    // Smooth scroll
+    links.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close the menu on link click
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                hamburgerIcon.classList.add('active');
+                crossIcon.classList.remove('active');
+            }
+        });
+    });
+});
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\welcome.css =====
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #00b31b;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #05fa63;
+}
+
+===== C:\Users\SoftLaptop\Downloads\Portfolio_Website-main\welcome.html =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to our portfolio website</h2>
+        <button onclick="location.href='signup.html'">Sign Up</button>
+        <button onclick="location.href='login.html'">Sign In</button>
+    </div>
+</body>
+</html>
+
