@@ -1,4 +1,4 @@
-```
+```markdown
 # Portfolio Website
 
 A modern, responsive portfolio website featuring user authentication, smooth navigation, and showcasing multiple service offerings for software engineering professionals.
@@ -37,22 +37,67 @@ This portfolio website is a comprehensive web application designed to showcase t
 ## 📸 Screenshots
 
 ### Welcome Page
-![Welcome Page](./screenshots/welcome.png)
-*Landing page with sign-up and sign-in options*
+![Welcome Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/welcome.png)
+*Landing page with sign-up and sign-in options - First point of entry for new visitors*
 
-### Main Portfolio
-![Portfolio Page](./screenshots/portfolio.png)
-*Interactive portfolio showcase with smooth navigation*
+### Sign Up Page
+![Sign Up](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/signup.png)
+*User registration form with name, email, phone, faculty selection, and password*
+
+### Sign In Page
+![Sign In](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/login.png)
+*Secure login interface with validation and "I don't have an account" link*
+
+### Hero Section
+![Hero Section](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/hero.png)
+*Main landing page with glassmorphism card effect showcasing the team*
+
+### Portfolio Showcase
+![Portfolio Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/portfolio.png)
+*Interactive portfolio showcase with 6 service cards featuring hover effects*
 
 ### Services Section
-![Services](./screenshots/services.png)
-*Six core service offerings with hover effects*
+![Services](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/services.png)
+*Detailed service descriptions with icons: Web Design, Development, SEO, Content Writing, WordPress, and Video Editing*
+
+### About Section
+![About](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/about.png)
+*Team introduction with gradient background and detailed service breakdown*
 
 ### Contact Form
-![Contact](./screenshots/contact.png)
-*Contact form with company details*
+![Contact](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/contact.png)
+*Professional contact form with company details on glassmorphism card*
 
 > **Note:** Add actual screenshots to the `screenshots/` folder after deployment.
+
+---
+
+## 🎬 Live Preview
+
+### Quick Tour
+
+**Authentication Flow:**
+```
+Welcome Page → Sign Up → Login → Portfolio Dashboard
+```
+
+**Key Features Demo:**
+1. 🔐 **User Registration** - Create account with name, email, phone, faculty
+2. ✅ **Secure Login** - Authenticate with stored credentials
+3. 🎨 **Interactive Portfolio** - 6 service cards with hover animations
+4. 📱 **Responsive Design** - Hamburger menu for mobile devices
+5. 💬 **Contact Form** - Get in touch with glassmorphism design
+6. 🔗 **Social Integration** - Direct links to team social profiles
+
+### Try It Yourself
+
+Visit the live demo: [https://ahmed-khalid2004.github.io/Portfolio-Website/](https://ahmed-khalid2004.github.io/Portfolio-Website/)
+
+**Test Credentials** (for demo purposes):
+- Username: `demo@example.com`
+- Password: `demo123`
+
+> Note: Create your own account to test the full authentication system!
 
 ---
 
@@ -284,6 +329,8 @@ vercel --prod
 ### Deployment Checklist
 
 After deployment, verify:
+- [x] Screenshots added to `/screenshots/` folder
+- [x] README updated with screenshot links
 - [ ] Home page loads correctly
 - [ ] All navigation links work
 - [ ] Images display properly
