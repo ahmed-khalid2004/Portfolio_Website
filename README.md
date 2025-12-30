@@ -34,35 +34,35 @@ This portfolio website is a comprehensive web application designed to showcase t
 ## 📸 Screenshots
 
 ### Welcome Page
-![Welcome Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/welcome.png)
+![Welcome Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (662).png)
 *Landing page with sign-up and sign-in options - First point of entry for new visitors*
 
 ### Sign Up Page
-![Sign Up](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/signup.png)
+![Sign Up](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (669).png)
 *User registration form with name, email, phone, faculty selection, and password*
 
 ### Sign In Page
-![Sign In](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/login.png)
+![Sign In](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (670).png)
 *Secure login interface with validation and "I don't have an account" link*
 
 ### Hero Section
-![Hero Section](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/hero.png)
+![Hero Section](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (668).png)
 *Main landing page with glassmorphism card effect showcasing the team*
 
 ### Portfolio Showcase
-![Portfolio Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/portfolio.png)
+![Portfolio Page](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (656).png)
 *Interactive portfolio showcase with 6 service cards featuring hover effects*
 
 ### Services Section
-![Services](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/services.png)
+![Services](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (657).png)
 *Detailed service descriptions with icons: Web Design, Development, SEO, Content Writing, WordPress, and Video Editing*
 
 ### About Section
-![About](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/about.png)
+![About](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (659).png)
 *Team introduction with gradient background and detailed service breakdown*
 
 ### Contact Form
-![Contact](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/contact.png)
+![Contact](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/Screenshots/Screenshot (660).png)
 *Professional contact form with company details on glassmorphism card*
 
 ---
