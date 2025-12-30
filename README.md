@@ -1,5 +1,3 @@
-Here's the updated README.md with demo deployment information integrated:
-
 ```markdown
 # Portfolio Website
 
