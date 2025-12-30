@@ -5,7 +5,7 @@ A modern, responsive portfolio website featuring user authentication, smooth nav
 ## 🔗 Live Demo
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge&logo=github)](https://ahmed-khalid2004.github.io/Portfolio_Website/)
-[![GitHub](https://img.shields.io/badge/github-repo-black?style=for-the-badge&logo=github)](https://github.com/ahmed-khalid2004/Portfolio-Website)
+[![GitHub](https://img.shields.io/badge/github-repo-black?style=for-the-badge&logo=github)](https://github.com/ahmed-khalid2004/Portfolio_Website)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](./LICENSE)
 
 **🌐 View Live:** [Portfolio_Website](https://ahmed-khalid2004.github.io/Portfolio_Website/)
