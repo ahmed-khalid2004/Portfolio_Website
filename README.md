@@ -86,7 +86,7 @@ Welcome Page → Sign Up → Login → Portfolio Dashboard
 
 ### Try It Yourself
 
-Visit the live demo: [https://ahmed-khalid2004.github.io/Portfolio-Website/](https://ahmed-khalid2004.github.io/Portfolio-Website/)
+Visit the live demo: [https://ahmed-khalid2004.github.io/Portfolio_Website/](https://ahmed-khalid2004.github.io/Portfolio_Website)
 
 **Test Credentials** (for demo purposes):
 - Username: `demo@example.com`
