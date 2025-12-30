@@ -1,5 +1,3 @@
-
-```
 # Portfolio Website
 
 A modern, responsive portfolio website featuring user authentication, smooth navigation, and showcasing multiple service offerings for software engineering professionals.
