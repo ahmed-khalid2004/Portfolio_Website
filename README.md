@@ -65,8 +65,6 @@ This portfolio website is a comprehensive web application designed to showcase t
 ![Contact](https://raw.githubusercontent.com/ahmed-khalid2004/Portfolio-Website/main/screenshots/contact.png)
 *Professional contact form with company details on glassmorphism card*
 
-> **Note:** Add actual screenshots to the `screenshots/` folder after deployment.
-
 ---
 
 ## 🎬 Live Preview
