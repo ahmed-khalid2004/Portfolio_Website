@@ -10,8 +10,6 @@ A modern, responsive portfolio website featuring user authentication, smooth nav
 
 **🌐 View Live:** [https://ahmed-khalid2004.github.io/Portfolio-Website/](https://ahmed-khalid2004.github.io/Portfolio-Website/)
 
-> **Note:** Replace `yourusername` with your actual GitHub username after deployment.
-
 ---
 
 ## Project Overview
